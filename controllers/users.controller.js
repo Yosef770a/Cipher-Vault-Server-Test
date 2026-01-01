@@ -2,7 +2,6 @@ import { registerUser, getUser } from "../services/users.service.js";
 
 export async function registerController(req, res) {
   try {
-    console.log("hdxsdxsdxsdxsdxsdxsdxsdxsdxsdxsdxs")
     const { username, password } = req.body;
     if (!username || !password) {
       return res.status(400).json({ message: "Missing username or password" })
